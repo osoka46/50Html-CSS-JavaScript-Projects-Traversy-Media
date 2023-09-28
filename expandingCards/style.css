@@ -14,5 +14,38 @@ body{
 }
 
 .container{
+    width: 80vw;
     display: flex;
+
 }
+.panel{
+    position: relative;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    flex: 0.6;
+    transition: ease 0.5s;
+    
+}
+
+.panel h3{
+    visibility: hidden;
+    position: absolute;
+    font-size: 24px;
+    left: 20px;
+    bottom: 20px;
+    margin: 0;
+    left: 20px;
+}
+.panel:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.active{
+    flex: 5;
+    cursor: pointer;
+}
+
